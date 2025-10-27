@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { format } from "date-fns";
 import { useNavigate } from "react-router-dom";
 import { useStoreActions,useStoreState } from "easy-peasy";
-import useAxiosFetch from "./hooks/useAxiosFetch";
 
 const EditPost = () => {
   const editBody = useStoreState((state)=>state.editBody);
