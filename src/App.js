@@ -13,7 +13,7 @@ import { useStoreActions } from "easy-peasy";
 function App() {
   const setPosts = useStoreActions((actions)=>actions.setPosts);
   const { data,isLoading,fetchError } = useAxiosFetch(
-    "https://api.jsonbin.io/v3/b/6900dc2043b1c97be9877be8"
+    "http://localhost:3500/posts"
   );
   useEffect(() => {
     setPosts(data);
