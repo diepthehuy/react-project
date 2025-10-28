@@ -18,7 +18,7 @@ const useAxiosFetch = (urldata) =>{
                     cancelToken: source.token
                 });
                 if(isMounted){
-                    setData(response.data);
+                    setData(response.data.record.posts);
                     setFetchError(null);
                 }
             }catch(err){
